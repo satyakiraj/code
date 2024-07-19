@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script type="module">
+    //Modules are the files of a reusable code. We can import sections of pre_written code into our file. It helps to make our code more usable and readble. To indicate that the file is a module we write module in the type attribute of script tag in the html document. To export any code from any file we use the export keyword before it. To imprt the code we use the import keyword followed by the name of variables and the functions. from keyword is use to specify the file path from which the code is being imported.
+    //import {Pi, calculate_area, calculate_circumference} from "./math_utils.js" - This way is used when we want to import some specific things only.
+    //this way is use to import everthing from the file
+    import * as Math_Utils from './math_utils.js';
+    const circumference = Math_Utils.calculate_circumference(45);
+    const area = Math_Utils.calculate_area(22 / 7);
+    console.log(circumference);
+    console.log(area);
+</script>
+
+</html>

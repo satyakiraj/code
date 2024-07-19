@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-transitions</title>
+</head>
+<style>
+    /* transition helps to change the property values of a certain element on specified time or actions performed by the user */
+    .box:hover {
+        width: 100px;
+        height: 150px;
+        border: 3px solid black;
+        background-color: rgb(88, 232, 184);
+    }
+
+    .box:hover img {
+        height: 45px;
+        width: 55px;
+
+    }
+
+    .box {
+        max-height: 248px;
+        width: 276px;
+        border: 3px solid blueviolet;
+    }
+
+    div {
+        margin: 175px;
+    }
+
+    .img {
+        height: 245px;
+        width: 300px;
+        /* The transition-property CSS property sets the CSS properties to which a transition effect should be applied. */
+        transition-property: width;
+        transition-duration: 1.45s;
+        /* The transition-timing-function CSS property sets how intermediate values are calculated for CSS properties being affected by a transition effect. */
+        transition-timing-function: ease-in-out;
+    }
+
+    .img:hover {
+        width: 56px;
+    }
+
+    .box3 {
+        width: 356px;
+        height: 345px;
+        border: 3px solid burlywood;
+    }
+
+    #hello {
+        width: 300px;
+        height: 285px;
+        /* transition-property: width;
+        transition-duration: 1.25s;
+        transition-timing-function: ease-in-out; */
+        /* it specifies the time after which the transition property starts */
+        /* transition-delay: 2s; */
+        /* transition is a short hand property */
+        transition: width 1.25s ease-in-out, height 1.45s ease-in-out;
+    }
+    
+</style>
+
+<body>
+    <div class="box"><img
+            src="https://plus.unsplash.com/premium_photo-1673306778968-5aab577a7365?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmFja2dyb3VuZCUyMGltYWdlfGVufDB8fDB8fHww"
+            alt="background1"></div>
+    <div class="container"><img class="img"
+            src="https://media.istockphoto.com/id/1203930843/photo/blue-red-light-background.webp?b=1&s=170667a&w=0&k=20&c=GwfVdVlksL1wpcIDCxu4vjzfmHup7Zc2gi9pmwIoZ1w="
+            alt="background2"></div>
+    <div class="box3">javascript animation<img
+            src="https://media.istockphoto.com/id/1424809056/photo/getter-then-less-then-icon-3d-render-concept-for-web-development.webp?b=1&s=170667a&w=0&k=20&c=tfXp1GUsHBtpyI3EDzqD4V7d-88a0Dzw0n7Bom7yFjk="
+            alt="html" id="hello"> <button id="btn1" type="button">click</button>
+        <button type="button" id="btn2">reset</button>
+        <button type="button" id="btn3">height</button>
+    </div>
+    <script>
+        document.getElementById("btn1").addEventListener("click", function () {
+            hello.style.width = "456px";
+        })
+        document.getElementById("btn2").addEventListener("click", function () {
+            hello.style.width = "300px";
+            hello.style.height = "285px";
+        })
+        document.getElementById("btn3").addEventListener("click", function () {
+            hello.style.height = "345px";
+        })
+    </script>
+
+</body>
+
+</html>

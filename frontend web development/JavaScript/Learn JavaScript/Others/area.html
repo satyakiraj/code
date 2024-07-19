@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <p id="p1"></p>
+  <button type="button" id="b1" onclick = function1()>click</button>
+</body>
+ <script>
+   let area;
+   let height;
+   let width;
+   height = window.prompt("height:");
+   width = window.prompt("width:");
+   area = areaCalculator(height, width);
+   function areaCalculator(a, b){
+      let result = a * b;
+      return result;
+   }
+   function function1(){
+   document.getElementById("p1").innerHTML = "you're area is" + area;
+}
+   </script>
+</html>

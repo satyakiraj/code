@@ -1,0 +1,6 @@
+In JavaScript, the slice() method is used to extract a portion of an array or a string without modifying the original array or string. The slice() method takes two parameters: the starting index and the ending index (exclusive). It will slice till before the last index. If no ending index is provided, the slice will go up to the end of the array or string.
+In JavaScript, the concat() method is used to concatenate arrays or strings. It does not change the existing arrays or strings; instead, it returns a new array or string containing the elements of the original arrays or strings.
+In JavaScript, the join() method is used to join the elements of an array into a string. It takes an optional parameter called the "separator," which is a string used to separate each element in the resulting string. If no separator is provided, a comma is used as the default separator.
+.includes() method is used to check whether the given string includes the given sub-string.
+In synchronous code all the steps are completed in an order and the other steps wait for the steps above them for being completed.
+In asynchronous code the given code is completed after the given time and doesn't wait for the previous code to be completed.

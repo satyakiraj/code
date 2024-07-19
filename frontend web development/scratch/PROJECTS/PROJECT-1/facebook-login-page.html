@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>facebook</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Poppins:wght@200&family=Roboto:ital,wght@1,300&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="facbook.css">
+</head>
+
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+}
+div {
+    display: inline-block;
+}
+
+h1 {
+    color: blue;
+    font-size: 48px;
+    font-family: Agbalumo;
+
+}
+
+.container {
+    padding: 50px;
+    position: relative;
+    top: 50PX;
+}
+
+#p1 {
+    font-size: 18px;
+    font-family: Roboto;
+    font-weight: 750;
+}
+
+#div1 {
+    border: 3px solid whitesmoke;
+    height: 360px;
+    width: 400px;
+    padding: 70px;
+    position: relative;
+    margin-left: 200px;
+    top: 35px;
+    border-radius: 35px;
+    margin-top: 100px;
+}
+
+input {
+    width: 315px;
+    height: 67px;
+    text-align: right;
+    font-size: 35px;
+    margin-right: 15px;
+    margin-left: 20px;
+}
+
+input::placeholder {
+    color: blue;
+    font-size: 19px;
+}
+
+#i1 {
+    margin-top: 20px;
+}
+
+#b1 {
+    width: 350px;
+    height: 75px;
+    position: relative;
+    top: 20px;
+    margin-left: 25px;
+    text-align: center;
+    color: white;
+    font-weight: 900;
+    background-color: blue;
+    border: 2px solid white;
+    border-radius: 15px;
+    margin-right: 15px;   
+    cursor: pointer;
+    font-size: 40px;
+}
+
+hr {
+    position: relative;
+    margin-top: 35px;
+    color: whitesmoke;
+}
+
+#b2 {
+    width: 276px;
+    height: 75px;
+    position: relative;
+    top: 20px;
+    margin-left: 25px;
+    text-align: center;
+    color: white;
+    font-weight: 900;
+    background-color: chartreuse;
+    border: 2px solid white;
+    border-radius: 15px;
+    left: 25px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+
+#a1 {
+    color: azure;
+}
+
+#a2 {
+    text-decoration: none;
+    position: relative;
+    left: 92px;
+    top: 20px;
+}
+
+@media screen and (min-width: 650px) {
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container,
+    .div1 {
+        display: inline-block;
+        height: 50vh;
+        width: 50vw;
+    }
+
+    .container {
+        margin-left: 45px;
+        margin-right: 0px;
+        left: 26px;
+    }
+
+    h1 {
+        font-size: 45px;
+        margin-left: 250px;
+        margin-right: 0px;
+        font-family: Agbalumo;
+    }
+
+    #p1 {
+        font-size: 35px;
+        margin-left: 250px;
+        line-height: 35px;
+        height: 300px;
+        width: 250px;
+        right: 50px;
+    }
+
+    #div1 {
+        margin-right: 300px;
+        line-height: 35px;
+        height: 450px;
+        width: 250px;
+        position: relative;
+        right: 45px;
+        margin-bottom: 195px;
+        border: 2px solid grey;
+        border-radius: 56px;
+        
+    }
+
+    input {
+        margin-right: 300px;
+        position: relative;
+        right: 45px;
+        text-align: left;
+        font-size: larger;
+    }
+    input::placeholder{
+        text-align: left;
+        color: gray;
+        font-size: 28px;
+    }
+
+    #b1 {
+        position: relative;
+        right: 80px;
+        width: 275px;
+        height: 90px;
+        font-size: 30px;
+        margin-left: 60px;
+
+    }
+
+    #b2 {
+        position: relative;
+        right: 105px;
+        width: 185px;
+        height: 90px;
+        font-size: 19px;
+        margin-right: 186px;
+    }
+    #i1{
+        margin-bottom: 25px;
+    }
+}
+    @media screen and (max-width: 649px) {
+        body {
+            height: 100vh;
+            display: flex;
+            width: 100vw;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #div1 {
+            width: 250px;
+            height: 550px;
+            margin-right: 185px;
+            border: none;
+           
+        }
+
+        #b1 {
+            height: 78px;
+            width: 250px;
+            font-size: 27px;
+            font-weight: 600;
+            margin-left: 26px;
+        }
+
+        #b2 {
+            height: 90px;
+            width: 250px;
+            font-size: medium;
+            font-weight: 600;
+            position: relative;
+            bottom: 40px;
+        }
+
+        #i1,
+        #i2 {
+            width: 250px;
+            height: 80px;
+            display: block;
+            border-radius: 16px;
+            border: 2px solid black;
+            margin-right: 50px;
+            position: relative;
+            right: 20px;
+        }
+
+        #i1 {
+            margin-bottom: 25px;
+        }
+
+        #b2 {
+            height: 95px;
+            width: 165px;
+        }
+
+        input::placeholder {
+            font-size: 13px;
+            color: grey;
+        }
+
+        input {
+            text-align: left;
+        }
+
+        .container {
+            position: relative;
+            top: 176px;
+        }
+    }
+</style>
+
+
+<body>
+    <div class="container">
+        <h1>Facebook</h1>
+        <p id="p1">Connect with friends and the world <br> around you on Facebook. </p>
+    </div>
+
+    <div id="div1">
+        <input id="i1" type="text" maxlength="25" placeholder="enter your phone number or email">
+        <input id="i2" type="password" maxlength="15" placeholder="password">
+        <button id="b1" type="button"><a id="a1" href="welcome.html" style="text-decoration: none;">Log in</a></button>
+        <p> <a href="#" id="a2">Forgotten password?</a></p>
+        <hr>
+        <button id="b2" type="button"><a href="https://www.facebook.com/"
+                style="text-decoration: none; color: aliceblue;">Create New account</a></button>
+    </div>
+
+
+</body>
+
+
+</html>

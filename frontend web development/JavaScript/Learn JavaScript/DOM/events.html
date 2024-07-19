@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        height: 150px;
+        width: 150px;
+        background-color: lightgreen;
+        margin: 50px;
+    }
+</style>
+
+<body>
+    <input type="text">
+    <div class="container">
+
+    </div>
+    <div class="box1"></div>
+</body>
+<script>
+    document.title = "events";
+    //onload() it does something when an elements load.
+    document.body.onload = window.alert("hello user");
+    //onchange is activated when an element has been changed.
+    document.querySelector('input').onchange = window.alert("You've left");
+    //onmouseover is activated when hover over an elemet and onmouseout is activated when we remove the mouse from the element.
+    const mydiv = document.querySelector('.container');
+    mydiv.onmouseover = doSomeThng;
+    mydiv.onmouseout = doSomeThngElse;
+    function doSomeThng() {
+        mydiv.style.backgroundColor = "cyan";
+    }
+    function doSomeThngElse() {
+        mydiv.style.backgroundColor = "lightgreen";
+    }
+    //onmousedown do something when we click and hold it and onmouseup do something when we release the mouse button.
+    const div2 = document.querySelector('.box1');
+    function doSomeThing1(){
+        div2.style.backgroundColor = "red";
+    }
+    function doSomeThingElse1(){
+        div2.style.backgroundColor = "lightgreens";
+    }
+    div2.onmousedown = doSomeThing1;
+    div2.onmouseup = doSomeThingElse1;
+</script>
+
+</html>

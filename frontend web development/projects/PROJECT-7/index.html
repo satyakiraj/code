@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free-Music</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <header>
+            <img id="music" src="images/free music.png" alt="logo">
+            <div class="search">
+                <input type="text" id="search-box" maxlength="50" spellcheck="false" placeholder="Search Music And Enjoy">
+                <button type="button" class="search-btn"><ion-icon class="logo"name="search-outline"></ion-icon></button>
+            </div>
+            <ion-icon name="grid" id="menu"></ion-icon>
+
+        </header>
+    </div>
+    <div class="music-playing">
+        <div class="image-area"></div>
+        <div class="music-control">
+            <div class="audio-control">
+                <span class="audio-measurement" id="audio-played">0:00</span>
+             <input type="range" id="progress-bar" value="0">
+             <span class="audio-measurement" id="duration">0:00</span>
+            </div>
+            <div class="gif">
+                <img id="gif" src="images/music.gif" alt="gif">
+            </div>
+            <div class="music-btns">
+                <span><ion-icon class="back" name="play-back-outline"></ion-icon></span>
+                <span class="play-pause" id="maga-play-btn">▶</span>
+                <span><ion-icon class="forward" name="play-forward-outline"></ion-icon></span>
+            </div>
+        </div>
+    </div>
+    <div class="show-music-list">
+        <div class="box1 music-icons" id="box1">
+            <div class="img">
+                <img class="music-images" src="images/believer.png" alt="believer">
+            </div>
+            <div class="buttons">
+                <audio src="music/believer.mp3" id="music1"></audio>
+                <button type="button" id="playbtn1" class="play">
+                    ▶
+                </button>
+            </div>
+            <div class="music-name">
+                Believer
+            </div>
+        </div>
+        <div class="box2 music-icons" id="box2">
+            <div class="img">
+                <img class="music-images" src="images/bones.png" alt="bones">
+            </div>
+            <div class="buttons">
+                <audio src="music/bones.mp3" id="music2"></audio>
+                <button type="button" id="playbtn2" class="play">
+                    ▶
+                </button>
+            </div>
+            <div class="music-name">
+                Bones
+            </div>
+        </div>
+        <div class="box3 music-icons" id="box3">
+            <div class="img">
+                <img class="music-images" src="images/way-down-we-go.png" alt="way-down-we-go">
+            </div>
+            <div class="buttons">
+                <audio src="music/way down we go.mp3" id="music3"></audio>
+                <button type="button" id="playbtn3" class="play">
+                    ▶
+                </button>
+            </div>
+            <div class="music-name-2">
+                Way Down We Go
+            </div>
+        </div>
+        <div class="box4 music-icons" id="box4">
+            <div class="img">
+                <img class="music-images" src="images/love-your-voice.png" alt="love-your-voice">
+            </div>
+            <div class="buttons">
+                <audio src="music/love your voice.mp3" id="music4"></audio>
+                <button type="button" id="playbtn4" class="play">
+                    ▶
+                </button>
+            </div>
+            <div class="music-name-2">
+                Love Your Voice
+            </div>
+        </div>
+        <div class="box5 music-icons" id="box5">
+            <div class="img">
+                <img class="music-images" src="images/shape-of-you.png" alt="shape-of-you">
+            </div>
+            <div class="buttons">
+                <audio src="music/shape of you.mp3" id="music5"></audio>
+                <button type="button" id="playbtn5" class="play">
+                    ▶
+                </button>
+            </div>
+            <div class="music-name">
+                Shape Of You
+            </div>
+        </div>
+        <div class="box6 music-icons" id="box6">
+            <div class="img">
+                <img class="music-images" src="images/enemy.png" alt="enemy">
+            </div>
+            <div class="buttons">
+                <audio src="music/enemy.mp3" id="music6"></audio>
+                <button type="button" id="playbtn6" class="play">▶</button>
+            </div>
+            <div class="music-name">
+                Enemy
+            </div>
+        </div>
+    </div>
+    <div class="show-all">
+        <button type="button" id="showbtn" onclick="show()">
+            Show All
+        </button>
+    </div>
+    <div class="hide-playlist">
+           
+    </div>
+</body>
+<script src="script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>

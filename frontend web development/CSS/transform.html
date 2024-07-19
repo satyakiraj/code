@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-transforms</title>
+    <style>
+        .container {
+            background-color: aquamarine;
+            height: 410px;
+        }
+
+        .box {
+            border: 2px solid black;
+            /*it tells the box to move 34px back or front and provides a scroll bar. it tells the  point from which the transformation should work*/
+            /*The transform CSS property lets you rotate, scale, skew, or translate an element. It modifies the coordinate space of the CSS visual formatting model.*/
+            /* In CSS, the visual formatting model describes how user agents take the document tree, and process and display it for visual media */
+            transform: translate(34px, 55px) scale(4, 7);
+            transform-origin: center;
+
+        }
+
+        img.a {
+            height: 350px;
+            width: 350px;
+            margin: 89px;
+            transform: rotate(0.5turn);
+        }
+
+        img {
+            height: 350px;
+            width: 350px;
+        }
+
+        /* transform: matrix(1, 2, 3, 4, 5, 6);  a shorthand property to set all the properties of transform*/
+        .box1 {
+            transform: skew(12deg, 15deg);
+        }
+
+        .box3 {
+            height: 250px;
+            width: 350px;
+            transform: rotateX(56deg);
+        }
+
+        .box4 {
+            transform: rotateY(45deg);
+        }
+        .box5{
+            height: 450px;
+            width: 345px;
+            transform: rotateZ(35deg);
+            margin: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium illo sunt expedita,
+            temporibus placeat consectetur quos et. Non, deserunt vero. Distinctio, rerum sunt!</div>
+        <img class="a" src="firefox-developer-edition.svg" alt="firefox-developer-edition">
+    </div>
+    <div class="box1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum ex, dolorum est quia unde quo
+        deserunt omnis nihil accusamus alias cumque ipsam dignissimos nobis sint exercitationem assumenda iure
+        distinctio natus mollitia in placeat libero.</div>
+    <div class="box3"><img class="b" src="helicopter.jpg" alt="hello"></div>
+    <div class="box4"><img src="firefox-developer-edition.svg" alt="firefox-developer-edition"></div>
+    <div class="box5"><img src="robot.jpg" alt="robot"></div>
+</body>
+
+</html>

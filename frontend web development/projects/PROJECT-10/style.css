@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container {
+    width: 45vw;
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    margin: 50px;
+    font-size: 30px;
+    font-family: consolas;
+    text-decoration: underline lightblue;
+    color: lightblue;
+    letter-spacing: 6px;
+    text-align: center;
+}
+
+.input-submit {
+    width: 85%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#send {
+    margin: 10px;
+    height: 35px;
+    width: 60px;
+    border-radius: 8px;
+    border: none;
+    background: transparent;
+    background-color: rgb(145, 210, 231);
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 300;
+}
+
+input {
+    width: 18vw;
+    height: 30px;
+    border: 3px solid rgb(32, 151, 190);
+    text-align: center;
+    border-radius: 10px;
+    color: rgb(69, 153, 125);
+    font-size: 20px;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    font-size: 15px;
+    color: rgb(129, 129, 129);
+}
+
+#clearBtn {
+    margin: 90px;
+    height: 30px;
+    width: 195px;
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 400;
+    color: rgb(255, 82, 82);
+    letter-spacing: 5px;
+}
+
+.list {
+    height: 30vh;
+    width: 38vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.items {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ol {
+    height: 90%;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+li {
+    height: 40px;
+    width: 180px;
+    text-align: left;
+    letter-spacing: 2px;
+    font-family: consolas;
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+}
+i{
+    color: rgb(247, 84, 84);
+    height: 6px;
+    width: 3px;
+    position: relative;
+    left: 50px;
+}

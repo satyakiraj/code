@@ -1,0 +1,113 @@
+ body {
+     background-color: lightblue;
+ }
+ p{
+    font-family: 'Courier New','Times New Roman',Courier, monospace;
+ }
+
+ #para,
+ h3 {
+     color: aqua;
+     background-color: antiquewhite;
+ }
+
+ .hello {
+     color: rgb(255, 230, 0);
+     ;
+ }
+
+ h1 {
+     color: greenyellow;
+     font-size: 58%;
+ }
+
+ #red {
+     color: rgb(255, 230, 0);
+     background-color: rgb(139, 0, 7);
+     border: 2px solid black;
+ }
+
+ * {
+     margin: 0%;
+     padding: 0%;
+     font-family: 'Source Code Pro', monospace;
+ }
+
+ body {
+     background: url(car.jpg);
+     background-repeat: no-repeat;
+ }
+
+ #hi {
+     color: yellowgreen;
+     height: 1300px;
+     width: 1300px;
+     border: 3px solid blue;
+     background: url(castle.jpeg);
+     background-size: cover;
+     padding: 30px;
+     /* background-position: 0%; */
+     /* background: url(castle.jpg) red no-repeat local; */
+     background-attachment: fixed;
+     text-decoration: blue wavy underline overline;
+     text-transform: uppercase;
+     text-align: center;
+     line-height: 55px;
+     font-size: 23px;
+ }
+
+ .box {
+     height: 450px;
+     width: 650px;
+     background-color: beige;
+     margin: 150px;
+     padding: 13px 3px 5px 8px;
+     border-width: 3px;
+     border-style: double groove;
+     border-color: aqua;
+     border-radius: 150px;
+     text-align: center;
+     font-size: 25px;
+    /* font-weight: 600;*/
+    font-variant: small-caps;
+     font-style: oblique 50deg;
+ }
+
+ /* local scroll */
+ #orange {
+     color: orange;
+ }
+
+ #white {
+     color: grey;
+ }
+
+ #green {
+     color: green;
+ }
+
+ #content {
+     display: inline-block;
+     background: blueviolet;
+     margin-left: 2px;
+     margin-right: 2px;
+ }
+
+ #box3 {
+     display: inline-block;
+     background: red;
+     margin-left: 2px;
+     margin-right: 2px;
+ }
+ /*min-height is respected*/
+ #h1{
+    margin: 60px;
+     height: 150px;
+    width: 400px;
+   max-width: 350px;
+    max-height: 350px;
+    min-width: 100px;
+    min-height: 100px;
+
+    background-color: aqua;
+ }

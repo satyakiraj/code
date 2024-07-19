@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+</body>
+<script>
+    //to ceate element .createElement() is used and to assign it a place append() is used.
+    const heading = document.createElement("h1");
+    heading.textContent = window.prompt("Enter A name:");
+    document.body.append(heading);
+    //prepend() is use to add an item at the beginning.
+    //it is use to place an item at a specified index.
+    const list = document.createElement('ul');
+    const item1 = document.createElement('li');
+    const item2 = document.createElement('li');
+    const item3 = document.createElement('li');
+    document.body.append(list);
+    list.append(item1, item2, item3);
+    const items_text = document.querySelectorAll('li');
+    items_text.forEach(Element => {
+        Element.textContent = "Mango";
+    });
+
+</script>
+
+</html>

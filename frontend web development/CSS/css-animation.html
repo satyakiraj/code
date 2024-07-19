@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-animations</title>
+</head>
+<style>
+    .box1 {
+        height: 100vh;
+        width: 100vw;
+        background-color: blue;
+    }
+
+    .container {
+        height: 300px;
+        width: 300px;
+        background-color: red;
+        animation: hello 4s;
+    }
+
+    @keyframes hello {
+        from {
+            width: 300px;
+        }
+
+        to {
+            width: 400px;
+        }
+    }
+</style>
+
+<body>
+    <div class="box1">
+        <div class="container"></div>
+    </div>
+</body>
+
+</html>

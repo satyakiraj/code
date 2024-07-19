@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+</head>
+<style>
+    img {
+        height: 150px;
+        width: 150px;
+        display: none;
+    }
+</style>
+
+<body>
+    <input type="text" id="pokemon-name">
+    <button type="button" id="button" onclick="fetchPokemon()">Show Pokemon</button>
+    <br>
+    <img src="" alt="" id="pokemon-image">
+    <p id="use"></p>
+</body>
+<script>
+    async function fetchPokemon() {
+        const pokemon_name = document.getElementById("pokemon-name").value.toLowerCase();
+        const pokemon_image = document.getElementById("pokemon-image");
+        const use = document.getElementById("use");
+        const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon_name}`);
+        try {
+            if (!response.ok) {
+                use.innerHTML = `${pokemon_name} couldn't be found. For more information, check the console.`;
+                throw new Error("Couldn't fetch resource");
+            }
+            console.clear();
+            const data = await response.json();
+            const pokemon_spirit = data.sprites.front_default;
+            const name = data.name;
+            pokemon_image.src = pokemon_spirit;
+            pokemon_image.style.display = "block";
+            use.innerHTML = name;
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
+</script>
+
+</html>

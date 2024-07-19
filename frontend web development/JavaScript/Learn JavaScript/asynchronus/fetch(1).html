@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    //fetch is use to retrive data from an api or a server through a HTTP(Hypertext Transfer Protocol)  request.
+    //fetch(url,{option})
+    //to convert the response in readble format we use json format etc. Json is promise base so we need to have then and catch callback and data is a variable which is automatically provided.
+    fetch("https://pokeapi.co/api/v2/pokemon/alakazam")
+        .then(Response => {
+            if(!Response.ok){
+                throw new Error("Couldn't find the pokemon")
+            }
+            return Response.json()
+        })
+        .then(data => console.log(data))
+        .catch(error => console.error(error));
+  
+</script>
+
+</html>

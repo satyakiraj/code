@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <span>Select method:-</span>
+        <br>
+        <input type="radio" id="Check1">Visa
+        <br>
+        <input type="radio" id="Check2">GPay
+        <br>
+        <input type="radio" id="Check3">Paytm
+        <br>
+        <input type="submit" id="mybtn" value="Mymethod">
+    </form>
+</body>
+<script>
+    //setinterval is use to excute some code continously after some milliseconds.
+    const input1 = document.getElementById("Check1");
+    const input2 = document.getElementById("Check2");
+    const input3 = document.getElementById("Check3");
+    const Mybtn = document.getElementById("mybtn");
+    if ((input1.checked === false) && (input2.checked === false) && (input3.checked === false)) {
+        var timer = setInterval(() => {
+            window.alert('Select a method of Payment')
+        }, 5000);
+    }
+    Mybtn.onclick = function () {
+        clearInterval(timer);
+        window.alert("Thanks for confirmng");
+    }
+</script>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //an error is an object with a description that something went wrong
+    //try and catch method is used to execute a piece of code and catch the error within it
+    //throw mthod is use to display a message when an error has been commited by the user while entering the data.
+    //the code written within finally block is executed in any condition wether the above code is executed or not.
+    try{
+        let x = window.prompt('Enter a number');
+         x = Number(x);
+        if(isNaN(x)) throw "It's not a number";
+        else if(x == "") throw "It's empty";
+        else {
+            console.log(x);
+        }
+    }
+    catch(error){
+        console.log(error);
+    }
+    finally{
+        console.log("This code is always executed");
+    }
+</script>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>MANGO</li>
+        <li>BANANA</li>
+        <li>GUAVA</li>
+    </ul>
+</body>
+<script>
+    const fruits = document.querySelector('ul');
+    const item = document.createElement('li');
+    item.textContent = "STRAWBERRY";
+    //it inserts the given element before a specified index.
+    fruits.insertBefore(item, fruits.querySelectorAll('li')[2]);
+</script>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button type="button" id="mybutton">clear</button>
+</body>
+<script>
+    //settimeout()function is use to repeat some function after some milliseconds. It repeats the given code only one time after some delay. It will always return an id.
+    //clearTimeout function is use to clear the settimeout() function through the id returned by settimeout() functon. 
+    const timer1 = setTimeout(() => { window.alert(`What's your name`); }, 3000);
+    const timer2 = setTimeout(() => { window.alert(`Who are you`); }, 4000);
+    const timer3 = setTimeout(() => { window.alert(`Where do you live`); }, 5000);
+
+    document.getElementById("mybutton").onclick = function () {
+        try {
+            clearTimeout(timer1, timer2, timer3);
+            window.alert("thanks for telling You're details");
+        }
+        catch (error) {
+            console.log(error);
+        }
+    }
+    console.log(timer1);
+    console.log(timer2);
+    console.log(timer3);
+</script>
+
+</html>

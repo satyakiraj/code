@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>radio</title>
+</head>
+<body>
+    <input id="i1" type="radio">visa <br>
+    <input id="i2" type="radio">paypal <br>
+    <input id="i3" type="radio">google pay <br>
+    <button id="button" type="button">CLICK</button>
+</body>
+<script>
+     document.getElementById("button").onclick = function(){
+        if(document.getElementById("i1").checked){
+            console.log("you're a visa user");
+        }
+        if(document.getElementById("i2").checked){
+            console.log("you're a paypal user");
+        }
+        if(document.getElementById("i3").checked){
+            console.log("you're a google pay user");
+        }
+     }
+</script>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul class="fruits">
+        <li>Apple</li>
+        <li>Mango</li>
+        <li>Banana</li>
+    </ul>
+    <ul class="vegetables">
+        <li>Tomato</li>
+        <li>Potato</li>
+        <li>Spinach</li>
+    </ul>
+    <ul class="deserts">
+        <li>Ice-Cream</li>
+        <li>Cake</li>
+        <li>Pie</li>
+    </ul>
+    <ul class="myitems">
+        <li>Pizza</li>
+        <li>Burger</li>
+        <li>Fries</li>
+    </ul>
+    <div class="box">
+        <div class="container1">
+
+        </div>
+    </div>
+</body>
+<script>
+    const body = document.body;
+    //.firstElementChild- it selects the first child of the element
+    let first_child = body.firstElementChild;
+    first_child.style.backgroundColor = "lime";
+    //.lastElementChild- it selects the last child of the document body. If you have script tag in your html document it will select it.
+    let last_child = body.lastElementChild;
+    console.log(last_child);
+    //.parantElement- it selects the parent element of the given element.
+    let element1 = document.querySelector('.container1');
+    let parent_element = element1.parentElement;
+    parent_element.innerHTML = "hello";
+    parent_element.style.backgroundColor = "cyan";
+    //.nextElementSibling - It selects the element after it.
+    let sibling = first_child.nextElementSibling;
+    sibling.style.backgroundColor = "lightgreen";
+   //.previousElementSibling - it selects the previous element of the given element.
+  let element2 = document.querySelector('.myitems');
+  let previous_element = element2.previousElementSibling;
+  previous_element.style.backgroundColor = "yellow";
+  //children[] is use to select the childrens of the given element. It returns a collection.
+  //chilren[2] it selects the element at the index 2 in the given collection
+ let myitems = document.querySelector('.myitems');
+ //it will select all the child elements.
+ let children = Array.from(myitems.children);
+ children.forEach(child => {
+    child.style.color = "blue";
+ })
+</script>
+
+</html>

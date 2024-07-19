@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Currency Converter</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Currency Conveter</h1>
+        <div class="amount">
+            <h2>Amount</h2>
+            <input type="text" id="value" value="1" maxlength="28">
+        </div>
+        <div class="input">
+            <h2>From</h2>
+            <div class="center">
+                <div class="image"><img src="https://flagcdn.com/48x36/us.png"></div>
+            <select id="fromCur"></select>
+            </div>
+        </div>
+        <div class="reverse"><i class="fas fa-exchange-alt"></i></div>
+        <div class="output">
+            <h2>To</h2>
+            <div class="center"><div class="image"><img src="https://flagcdn.com/48x36/in.png"></div>
+            <select id="toCur"></select></div>
+        </div>
+        <div class="result">
+        </div>
+        <div class="button">
+            <button class="convert" onclick="convert()">
+                Convert
+            </button>
+        </div>
+    </div>
+</body>
+<script src="countries.js"></script>
+<script src="script.js"></script>
+
+</html>

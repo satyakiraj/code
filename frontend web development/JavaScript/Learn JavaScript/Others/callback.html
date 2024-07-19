@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para"></p>
+</body>
+<script>
+    //in a callback a function name is taken as an argument and that function is called when the first function is completed
+    sum(2, 3, controlDOM);
+    function sum(x, y, funcName){
+        let result = x + y;
+       console.log(result);
+       funcName(result)
+    }
+    function controlDOM(display){
+        document.getElementById("para").textContent = display;
+    }
+</script>
+</html>

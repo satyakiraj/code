@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Grocery List</h1>
+        <div class="input-submit">
+            <input type="text" id="item-name" maxlength="15" placeholder="eg. eggs and Press Enter Key">
+            <button type="button" id="send" onclick="windowOpen()">Send</button>
+        </div>
+        <div class="list">
+            <ol class="items">
+              
+            </ol>
+        </div>
+    </div>
+    <div class="clear-all">
+        <button type="button" id="clearBtn">Clear All Items</button>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

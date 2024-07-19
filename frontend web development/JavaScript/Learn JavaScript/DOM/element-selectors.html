@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="box1">
+        <h id="heading">Hello World</h>
+        <br>
+        <input name="Fruits" value="Apple" type="radio" checked="checked">
+        <label for="fruit">Apple</label>
+        <br>
+        <input name="Fruits" value="Banana" type="radio">
+        <label for="fruit">Banana</label>
+        <br>
+        <input name="Fruits" value="Guava" type="radio">
+        <label for="fruit">Guava</label>
+        <p id="display1"></p>
+    </div>
+    <div class="box2">
+        <ul>
+            <li>Potato</li>
+            <li>Tomato</li>
+            <li>Spinach</li>
+        </ul>
+    </div>
+    <div class="box3">
+        <p class="paragraph">C#</p>
+        <p class="paragraph">JavaScript</p>
+        <p class="paragraph">Python</p>
+    </div>
+    <div class="box4">
+        <p class="p1"></p>
+        <p id="p1"></p>
+        <textarea cols="30" rows="10"></textarea>
+        <br>
+        <input type="text">
+    </div>
+    <div class="box5">
+        <span></span>
+        <br>
+        <span></span>
+        <br>
+        <span></span>
+        <br>
+        <span></span>
+        <br>
+        <span></span>
+    </div>
+</body>
+<script>
+    const display1 = document.getElementById("dispay1");
+    document.title = "element-selectors";
+    const heading = document.getElementById("heading");
+    heading.style.backgroundColor = "blue";
+    //it is use to select the elements by their name. It returns a node list which is similar to an array. Node is an interface used to represent various types of elements in an HTML or XML document. Essentially, every part of the document structure is considered a node. Nodes can be elements, attributes, text within elements, comments, document metadata, etc.  
+    const names = document.getElementsByName("Fruits");
+    names.forEach(fruit => {
+        if (fruit.checked) {
+            console.log(fruit.value);
+        }
+    })
+    //it is use to select items by its tag name. It also returns an array.
+    const vegetables = document.getElementsByTagName("li");
+    vegetables[1].style.backgroundColor = "lightgreen";
+    //it is use to select items by its class. It also returns an array.
+    const paras = document.getElementsByClassName("paragraph");
+    paras[0].style.backgroundColor = "cyan";
+    //through queryselector we can select elements by their id class or tag name. Id -> # and class -> . It selects only the first item with the particular class, tag, or attribute.
+    document.querySelector('#p1').innerHTML = "hello World";
+    document.querySelector('.p1').innerHTML = "Hello SATYAKI RAJ";
+    document.querySelector('[cols]').value = "Enter You're Reason";
+    //to select all the items with the particular class, tag, or attribute querySelectorAll is used. It also returns Node List.
+    const elements = document.querySelectorAll('span');
+    elements.forEach(Element => {
+        Element.style.backgroundColor = "cyan";
+    })
+    elements.forEach(Element => {
+        Element.innerHTML = "Trying";
+    })
+</script>
+
+</html>

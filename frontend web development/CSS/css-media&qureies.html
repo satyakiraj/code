@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css- media & qureies</title>
+    <style>
+        .container{
+            background-color: cadetblue;
+            height: 56vh;
+            width: 55vw;
+        }
+        /*it tells as soon as the max-width becomes less than the value specified triger the specified css rule*/
+        @media screen and (max-width: 600px){
+            body{
+                background-color: aqua;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .container{
+                height: 50vh;
+                width: 55vw;
+                color: bisque;
+                position: relative;
+                top: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque saepe qui, temporibus accusantium, expedita culpa mollitia voluptates ipsa deleniti exercitationem possimus aut odit placeat a sapiente nisi officiis quaerat. Expedita, officiis sed.
+    </div>
+</body>
+
+</html>
