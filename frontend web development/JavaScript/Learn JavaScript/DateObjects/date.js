@@ -1,4 +1,4 @@
-//date objects work with date & times. To get date we need to call the consructor Date class.
+//date objects work with date & times. To get date we need to call the consrucor of Date class.
 let date1 = new Date();
 console.log(date1.toLocaleString());
 //we are creating our new date object using the constructor in the Date class 
