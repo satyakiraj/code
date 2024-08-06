@@ -20,4 +20,4 @@ const promise2 = time => new Promise((resolve) => {
     }, time);
 });
 
-promise2(4564).then((time) => console.log(`Thanks For waiting ${time / 1000}s`));
+promise2(4564).then((value) => console.log(`Thanks For waiting ${value / 1000}s`));
