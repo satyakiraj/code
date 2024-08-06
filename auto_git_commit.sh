@@ -15,6 +15,9 @@ if [ -n "$NEW_FILES" ]; then
 
     # Commit with a message
     git commit -m "Automatically adding new files/folders in $WATCHED_DIR"
+
+    # Push to GitHub
+    git push origin main
 else
     echo "No new files or folders to add."
 fi
