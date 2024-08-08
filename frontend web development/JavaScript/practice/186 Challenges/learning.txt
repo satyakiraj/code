@@ -1,0 +1,2 @@
+always intialize the variable
+array.reduce() method is used to sum all the values of an array to single value and creates a new array
