@@ -4,3 +4,4 @@ In JavaScript, the join() method is used to join the elements of an array into a
 .includes() method is used to check whether the given string includes the given sub-string.
 In synchronous code all the steps are completed in an order and the other steps wait for the steps above them for being completed.
 In asynchronous code the given code is completed after the given time and doesn't wait for the previous code to be completed.
+new Array(n) is use to create an empty array with n number of items
