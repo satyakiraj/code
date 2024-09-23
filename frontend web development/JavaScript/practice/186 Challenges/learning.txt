@@ -1,2 +1,3 @@
-always intialize the variable
-array.reduce() method is used to sum all the values of an array to single value and creates a new array
+always intialize the variable.
+array.reduce() method is used to sum all the values of an array to single value and creates a new array.
+new Set() method is just like an array but treated as an abject and automatically removes all the duplicate element in the array and .add() is use to add values to it.
