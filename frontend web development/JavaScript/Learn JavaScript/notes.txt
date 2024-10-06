@@ -5,3 +5,4 @@ In JavaScript, the join() method is used to join the elements of an array into a
 In synchronous code all the steps are completed in an order and the other steps wait for the steps above them for being completed.
 In asynchronous code the given code is completed after the given time and doesn't wait for the previous code to be completed.
 new Array(n) is use to create an empty array with n number of items
+A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives a function access to its outer scope. In JavaScript, closures are created every time a function is created, at function creation time.
