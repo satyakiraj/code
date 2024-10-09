@@ -7,3 +7,12 @@ In asynchronous code the given code is completed after the given time and doesn'
 new Array(n) is use to create an empty array with n number of items
 A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives a function access to its outer scope. In JavaScript, closures are created every time a function is created, at function creation time.
 A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives a function access to its outer scope. In JavaScript, closures are created every time a function is created, at function creation time.
+finction compostions is way in js using which we can add multiple functions in one function which takes a sing argument. example to understand:- 
+const double = x => x * 2;        // A function that doubles a number
+const addOne = x => x + 1;        // A function that adds one to a number
+
+const composedFunction = compose(double, addOne); // Composes the two functions
+
+console.log(composedFunction(5)); // Output: 11
+compose = (fn1, fn2) => value => fn2(fn1(value))            
+in this above example double and addOne function is composed in a single function compose. Compose takes two function as argumennts, takes one parameter value and sends it to fn1 first and the result of fn1 to fn2.  
