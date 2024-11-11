@@ -16,3 +16,31 @@ const composedFunction = compose(double, addOne); // Composes the two functions
 console.log(composedFunction(5)); // Output: 11
 compose = (fn1, fn2) => value => fn2(fn1(value))            
 in this above example double and addOne function is composed in a single function compose. Compose takes two function as argumennts, takes one parameter value and sends it to fn1 first and the result of fn1 to fn2.  
+Method chaining is a programming technique in JavaScript where multiple methods are called sequentially on the same object, without explicitly assigning the result to a variable. Each method returns the same object (this), allowing the next method to be called on it
+Ex- class Calculator {
+  constructor() {
+    this.value = 0;
+  }
+
+  add(x) {
+    this.value += x;
+    return this;
+  }
+
+  multiply(y) {
+    this.value *= y;
+    return this;
+  }
+
+  getValue() {
+    return this.value;
+  }
+}
+Promise.all() is a method in JavaScript that takes an array (or any iterable) of promises and returns a single Promise that resolves when all of the promises in the iterable have resolved, or rejects as soon as any one of the promises rejects.
+Ex - const promise1 = Promise.resolve(3);
+const promise2 = 42; // this will be treated as a resolved promise
+const promise3 = new Promise((resolve) => setTimeout(resolve, 100, 'foo'));
+
+Promise.all([promise1, promise2, promise3])
+  .then((values) => console.log(values))
+  .catch((error) => console.error(error));
