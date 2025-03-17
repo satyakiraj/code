@@ -7,6 +7,7 @@ const testStr =
 //replaceAll() finds all string that matches regex and replaces it
 
 //they usually capture a group
+//they are used to capture a specific part of string like "co" from "cow"
 
 //Matches one or more digits
 console.log(testStr.match(/\d+/gm))
