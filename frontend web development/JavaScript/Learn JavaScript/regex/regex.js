@@ -77,3 +77,5 @@ console.log("hi world hello world".match(/(?:hello|hi) world/gm))
 
 /* A lookahead checks whether a pattern exists after a given match without including it in the result. (here it looks for numbers before px without including "px" in it which is 0 and 2)*/
 console.log("200em 500px 912px".match(/\d(?=px)/gm))
+
+//The ? means "zero or one occurrence". (Makes the Group Optional). Works only with groups(capturing or non-capturing group)
