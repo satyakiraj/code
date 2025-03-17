@@ -9,6 +9,8 @@ const testStr =
 //they usually capture a group
 //they are used to capture a specific part of string like "co" from "cow"
 
+//The ? means "zero or one occurrence". (Makes the Group Optional). Works only with groups(capturing or non-capturing group)
+
 //Matches one or more digits
 console.log(testStr.match(/\d+/gm))
 
@@ -78,4 +80,16 @@ console.log("hi world hello world".match(/(?:hello|hi) world/gm))
 /* A lookahead checks whether a pattern exists after a given match without including it in the result. (here it looks for numbers before px without including "px" in it which is 0 and 2)*/
 console.log("200em 500px 912px".match(/\d(?=px)/gm))
 
-//The ? means "zero or one occurrence". (Makes the Group Optional). Works only with groups(capturing or non-capturing group)
+//checks credit cards of 4 companies - Visa, Mastercard, American Express, Discover
+function check(str) {
+  return /^(?:4[0-9]{12}(?:[0-9]{3})?)|(?:5[1-5][0-9]{14}|2(?:2[2-9][0-9]|[3-6][0-9]{2}|7[0-1][0-9]|720[0-9]{12}))|(?:3[47][0-9]{13})|(?:6011[0-9]{12}|622(?:12[6-9]|1[3-9][0-9]|[2-8][0-9]{2}|9[0-1][0-9]|92[0-5])[0-9]{10}|64[4-9][0-9]{13}|65[0-9]{14})$/.test(
+    str,
+  )
+}
+console.log(check("4111111111111111"))
+console.log(check("4111111111111"));
+console.log(check("5555555555554444"));
+console.log(check("2720999999999999"));
+console.log(check("378282246310005"));
+console.log(check("6011111111111117"));
+console.log(check("6221261234567890"));
